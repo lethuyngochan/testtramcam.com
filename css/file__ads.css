@@ -1,0 +1,127 @@
+/* CSS nút sale bán hàng shoppe */
+
+#nut-wrapper-webb-format {
+  position: fixed;
+  bottom: 30%;
+  left: 5px;
+  z-index: 999;
+}
+
+#nut-wrapper-webb {
+  width: 75px;
+  height: 75px;
+}
+
+#nut-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e6e6e6;
+  border-radius: 20px;
+  border: 0.3px solid #c3c3c3;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#nut-close-btn svg {
+  width: 10px;
+  height: 10px;
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 2px;
+}
+
+#nut-wrapper-webb-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+#nut-wrapper-webb-img div {
+  background: url(/wp-content/themes/flatsome-child/gh_ads_web/img/cuoi_thang_sale_50.png) no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS pop-up */
+
+.pop_up_contact {
+  display: none;
+  height: 140vh;
+  width: 100%;
+  background-color: #00000075;
+  position: fixed;
+  z-index: 10000;
+  bottom: -80%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+.show_pop_up_contact {
+  width: 40%;
+  min-width: 40%;
+  z-index: 100;
+  margin: 0 auto;
+  box-shadow: 0 0 6px 1px #3e3e3e61;
+  color: #000;
+  padding: 30px;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.buody_pop_up {
+  position: relative;
+  margin: auto;
+}
+.buody_pop_up .title {
+  font-size: 18px;
+  margin-bottom: 7px;
+  color: var(--fs-color-primary);
+}
+.buody_pop_up .des {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.submit_yes_no {
+  background: #fff;
+  width: auto;
+  display: inline-flex;
+  padding: 3px 13px 7px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #000;
+  border: none;
+}
+.submit_yes {
+  background: var(--fs-color-primary);
+  width: auto;
+  display: inline-flex;
+  padding: 3px 13px 7px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid var(--fs-color-primary);
+  color: #fff;
+}
+
+@media (max-width: 549px) {
+  .show_pop_up_contact {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 15px;
+    margin-top: 60%;
+    position: fixed;
+    width: 95%;
+  }
+  .buody_pop_up {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+}
