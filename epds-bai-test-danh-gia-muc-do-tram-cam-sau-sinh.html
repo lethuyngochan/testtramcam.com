@@ -1892,8 +1892,6 @@
                 <div class="options" id="options"></div>
                 <div class="buttons" id="nav-buttons">
                     <button onclick="prevQuestion()"><img src="img/back.svg"> Quay lại</button>
-                    <button onclick="nextQuestion()" id="nextBtn" class="button primary lowercase"
-                        style="border-radius:92px;padding:5px 20px;">Tiếp theo</button>
                 </div>
                 <script>
                     const questions = [
@@ -1941,7 +1939,7 @@
                                 const label = document.createElement("label");
                                 label.htmlFor = optionId;
                                 label.innerHTML = `
-                                    <input type="radio" name="q${currentQuestion}" id="${optionId}" value="${index}" ${responses[currentQuestion] == index ? 'checked' : ''}> ${answer}`;
+                                    <input type="radio" name="q${currentQuestion}" id="${optionId}" value="${index}" ${responses[currentQuestion] == index ? 'checked' : ''} onchange="handleAnswer(${index})"> ${answer}`;
                                 optionsDiv.appendChild(label);
                             });
                             navButtons.style.display = "flex";
@@ -1970,6 +1968,15 @@
                             showQuestion();
                         }
                     }
+
+                    function handleAnswer(value) {
+                        responses[currentQuestion] = value;
+                        setTimeout(() => {
+                            currentQuestion++;
+                            showQuestion();
+                        }, 200); // delay nhẹ để người dùng thấy lựa chọn
+                    }
+
 
                     function showResult() {
                         const questionDiv = document.getElementById("question");
