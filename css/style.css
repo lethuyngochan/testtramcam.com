@@ -7,10 +7,265 @@ Version: 3.0
 */
 
 /*************** ADD CUSTOM CSS HERE.   ***************/
+@font-face {
+    font-family: 'BeVietnamPro';
+    src: url(../fonts/BeVietnamPro-Light.ttf);
+}
 
+@font-face {
+    font-family: 'AlegreyaSans';
+    src: url(../fonts/AlegreyaSans-Regular.ttf);
+}
 
-@media only screen and (max-width: 48em) {
-/*************** ADD MOBILE ONLY CSS HERE  ***************/
+.ml-10 {
+    margin-left: 10px;
+}
 
+.mb-30 {
+    margin-bottom: 30px;
+}
 
+.bold-divider {
+    width: 100%;
+    height: 3px;
+    background: #384442;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.content {
+    display: none;
+    padding: 10px 10px 20px;
+    border-top: none;
+}
+
+.col .collapsible:first-child {
+    border-top: 0;
+}
+
+.pr-45 {
+    padding-right: 45px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-45 {
+    padding-left: 45px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.font1-5 {
+    font-size: 1.5em;
+}
+
+.font2 {
+    font-size: 2em;
+}
+
+.'AlegreyaSans' {
+    font-family: 'AlegreyaSans';
+}
+
+.light-grey {
+    color: #D4D4D4;
+}
+
+.dark-grey {
+    color: #384442;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.border-radius-30 {
+    border-radius: 30px;
+}
+
+.flickity-slider .col,
+.list_3bai .col {
+    padding: 0 15px;
+}
+
+.content li {
+    padding: 0 0 0 40px;
+}
+
+ul.content {
+    margin: 0;
+    padding: 0;
+}
+
+#col-359567962 img {
+    max-width: 260px;
+}
+
+.light-green-bg {
+    background: #EFF2E7;
+}
+
+.grey {
+    color: #384442;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-family: 'AlegreyaSans-Medium';
+    line-height: 1.2;
+}
+
+.question h3 {
+    font-size: 1em;
+}
+
+.question p {
+    font-size: 0.6em;
+    font-family: 'BeVietnamPro', sans-serif;
+    line-height: 1.5;
+    color: #777;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 8px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#progress-status {
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #86A96E;
+    transition: width 0.3s;
+}
+
+#qa-test {
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'AlegreyaSans-Medium';
+    src: url(../fonts/AlegreyaSans-Medium.ttf);
+}
+
+@media only screen and (max-width: 1099px) {
+    .h1, h1 {
+        font-size: 2.5em;
+    }
+
+    .flex-direction-col-md {
+        flex-direction: column;
+    }
+
+    .colum_baitest .col-inner .flex-direction-col-md.row>.col.large-4 {
+        padding: 0 25px;
+    }
+
+    #row-133505101 .large-2.text-right {
+        display: none;
+    }
+
+    #qa-test {
+        padding: 50px 20px 50px 50px;
+    }
+
+    #qa-test .col {
+        padding: 0;
+    }
+
+    .question {
+        font-size: 1.6em;
+    }
+
+    #qa-test h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    #qa-test a.grey {
+        font-size: 0.8em;
+    }
+
+    .question h3 {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    #row-503076504 .test-thumbnail {
+        height: 200px;
+    }
+
+    .list_3bai .post-item {
+        margin: 0 0 30px;
+    }
+
+    #col-1927299224, #col-839235156 {
+        padding: 0;
+    }
+
+    .h1, h1 {
+        font-size: 2em;
+    }
+
+    #col-1924438954 {
+        padding-bottom: 0;
+    }
+
+    #text-4133168996 {
+        padding: 0 10px 30px;
+    }
+
+    #section_1294289161 {
+        padding-top: 0;
+    }
+
+    #col-1500234541 {
+        padding: 30px 15px 30px;
+    }
+
+    #col-839235156 {
+        padding: 0 15px;
+    }
+
+    #qa-test {
+        padding: 30px 0 30px 30px;
+    }
 }
