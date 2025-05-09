@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="https://testtramcam.com/xmlrpc.php">
 
@@ -323,16 +323,6 @@
         }
     </style>
     <link rel="stylesheet" href="css/all.min.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="img/js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-1J9FF51NV7');
-    </script>
     <script async="" src="img/f(2).txt" crossorigin="anonymous" data-checked-head="true"></script>
     <link rel="icon" href="img/cropped-faticon-32x32.webp" sizes="32x32">
     <link rel="icon" href="img/cropped-faticon-192x192.webp" sizes="192x192">
@@ -1869,6 +1859,15 @@
     <meta http-equiv="origin-trial"
         content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
     <script src="js/wp-emoji-release.min.js" defer=""></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZTGYN0YZ1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9ZTGYN0YZ1');
+    </script>
 </head>
 
 <body
@@ -1893,7 +1892,8 @@
                 <div class="options" id="options"></div>
                 <div class="buttons" id="nav-buttons">
                     <button onclick="prevQuestion()"><img src="img/back.svg"> Quay lại</button>
-                    <button onclick="nextQuestion()" id="nextBtn" class="button primary lowercase" style="border-radius:92px;padding:5px 20px;">Tiếp theo</button>
+                    <button onclick="nextQuestion()" id="nextBtn" class="button primary lowercase"
+                        style="border-radius:92px;padding:5px 20px;">Tiếp theo</button>
                 </div>
                 <script>
                     const questions = [
@@ -2078,10 +2078,10 @@
                             ]
                         }
                     ];
-                
+
                     let currentQuestion = 0;
                     const responses = new Array(questions.length).fill(null);
-                
+
                     function updateProgress() {
                         const progressPercent = Math.round((currentQuestion / questions.length) * 100);
                         document.getElementById("progress-fill").style.width = progressPercent + "%";
@@ -2090,12 +2090,12 @@
                                 ? "Hoàn thành 100%"
                                 : `Câu ${currentQuestion + 1}/${questions.length} - Đã hoàn thành ${progressPercent}%`;
                     }
-                
+
                     function showQuestion() {
                         const questionDiv = document.getElementById("question");
                         const optionsDiv = document.getElementById("options");
                         const navButtons = document.getElementById("nav-buttons");
-                
+
                         if (currentQuestion < questions.length) {
                             questionDiv.innerText = questions[currentQuestion].question;
                             optionsDiv.innerHTML = "";
@@ -2116,7 +2116,7 @@
                             navButtons.style.display = "none";
                         }
                     }
-                
+
                     function nextQuestion() {
                         const selected = document.querySelector(`input[name='q${currentQuestion}']:checked`);
                         if (selected) {
@@ -2127,20 +2127,20 @@
                             alert("Vui lòng chọn một đáp án trước khi tiếp tục.");
                         }
                     }
-                
+
                     function prevQuestion() {
                         if (currentQuestion > 0) {
                             currentQuestion--;
                             showQuestion();
                         }
                     }
-                
+
                     function showResult() {
                         const questionDiv = document.getElementById("question");
                         const optionsDiv = document.getElementById("options");
-                
+
                         const totalScore = responses.reduce((a, b) => a + (b ?? 0), 0);
-                
+
                         let advice = "";
                         if (totalScore <= 13) {
                             advice = `<h3>Tình trạng bình thường</h3><p>Bạn không có dấu hiệu rõ rệt của trầm cảm.</p>`;
@@ -2151,16 +2151,16 @@
                         } else {
                             advice = `<h3>Trầm cảm nặng</h3><p>Hãy tìm đến chuyên gia tâm thần hoặc bác sĩ ngay để được giúp đỡ kịp thời.</p>`;
                         }
-                
+
                         questionDiv.innerHTML = `<h3>Kết quả của bạn: ${totalScore} điểm</h3>${advice}`;
                         optionsDiv.innerHTML = "";
                         updateProgress();
                     }
-                
+
                     showQuestion();
                 </script>
-                
-                
+
+
             </div>
         </div>
 
