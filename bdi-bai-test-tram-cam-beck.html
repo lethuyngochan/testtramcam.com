@@ -2147,13 +2147,17 @@
 
                         let advice = "";
                         if (totalScore <= 13) {
-                            advice = `<h3>Tình trạng bình thường</h3><p>Bạn không có dấu hiệu rõ rệt của trầm cảm.</p>`;
+                            advice = `<h3>Tình trạng bình thường</h3><p>Bạn không có dấu hiệu rõ rệt của trầm cảm.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         } else if (totalScore <= 19) {
-                            advice = `<h3>Trầm cảm nhẹ</h3><p>Có thể bạn đang trải qua trầm cảm nhẹ. Hãy theo dõi thêm và chia sẻ với người thân.</p>`;
+                            advice = `<h3>Trầm cảm nhẹ</h3><p>Có thể bạn đang trải qua trầm cảm nhẹ. Hãy theo dõi thêm và chia sẻ với người thân.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         } else if (totalScore <= 28) {
-                            advice = `<h3>Trầm cảm trung bình</h3><p>Bạn nên tìm tư vấn từ chuyên gia tâm lý để được hỗ trợ.</p>`;
+                            advice = `<h3>Trầm cảm trung bình</h3><p>Bạn nên tìm tư vấn từ chuyên gia tâm lý để được hỗ trợ.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         } else {
-                            advice = `<h3>Trầm cảm nặng</h3><p>Hãy tìm đến chuyên gia tâm thần hoặc bác sĩ ngay để được giúp đỡ kịp thời.</p>`;
+                            advice = `<h3>Trầm cảm nặng</h3><p>Hãy tìm đến chuyên gia tâm thần hoặc bác sĩ ngay để được giúp đỡ kịp thời.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         }
 
                         questionDiv.innerHTML = `<h3>Kết quả của bạn: ${totalScore} điểm</h3>${advice}`;

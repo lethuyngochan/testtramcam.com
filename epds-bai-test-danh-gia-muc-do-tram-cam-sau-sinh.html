@@ -1988,15 +1988,18 @@
                         if (totalScore <= 9) {
                             advice = `
                                 <h3>Kết quả bình thường</h3>
-                                <p>Bạn có ít hoặc không có dấu hiệu của trầm cảm sau sinh. Tuy nhiên, hãy tiếp tục quan tâm đến sức khỏe tinh thần và theo dõi bản thân trong thời gian tới.</p>`;
+                                <p>Bạn có ít hoặc không có dấu hiệu của trầm cảm sau sinh. Tuy nhiên, hãy tiếp tục quan tâm đến sức khỏe tinh thần và theo dõi bản thân trong thời gian tới.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         } else if (totalScore <= 12) {
                             advice = `
                                 <h3>Nguy cơ trung bình</h3>
-                                <p>Bạn có dấu hiệu nhẹ của trầm cảm sau sinh. Hãy tâm sự với người thân, chăm sóc bản thân nhiều hơn và cân nhắc tham khảo ý kiến chuyên gia nếu các triệu chứng kéo dài.</p>`;
+                                <p>Bạn có dấu hiệu nhẹ của trầm cảm sau sinh. Hãy tâm sự với người thân, chăm sóc bản thân nhiều hơn và cân nhắc tham khảo ý kiến chuyên gia nếu các triệu chứng kéo dài.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         } else {
                             advice = `
                                 <h3>Nguy cơ cao</h3>
-                                <p>Bạn đang có dấu hiệu rõ rệt của trầm cảm sau sinh. Hãy tìm kiếm sự giúp đỡ từ bác sĩ, chuyên gia tâm lý hoặc trung tâm y tế để được hỗ trợ kịp thời.</p>`;
+                                <p>Bạn đang có dấu hiệu rõ rệt của trầm cảm sau sinh. Hãy tìm kiếm sự giúp đỡ từ bác sĩ, chuyên gia tâm lý hoặc trung tâm y tế để được hỗ trợ kịp thời.</p>
+                                <p><a href="tram-cam-la-gi.html">Xem thêm - Trầm cảm là gì?</a></p>`;
                         }
 
                         questionDiv.innerHTML = `<h3>Tổng điểm của bạn: ${totalScore}</h3>${advice}`;
